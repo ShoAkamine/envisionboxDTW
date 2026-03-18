@@ -1,0 +1,1 @@
+The merged timeseries data are available on the OSF storage. Please download the zip files, extract the files from the zip, and store them in the "01_merged_ts" under "data/processed" folder.
