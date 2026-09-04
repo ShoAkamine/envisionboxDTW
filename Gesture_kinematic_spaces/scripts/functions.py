@@ -10,6 +10,10 @@ MOTAMEDI_DIR    = "../data/ValidationDataMotamedi/"
 MOTAMEDI_PROC_DIR        = MOTAMEDI_DIR + "processed/"
 
 
+def minmax(s):
+    return (s - s.min()) / (s.max() - s.min())
+    
+
 def mirror_ts(ts, cols):
     """
     Mirror the time series by (i) swapping LEFT and RIGHT columns for partner keypoints, and (ii) negating the X coordinates of all keypoints.
