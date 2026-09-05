@@ -1,0 +1,141 @@
+/*-- scss:defaults --*/
+// Quartz leaves code blocks fully transparent, so they would render straight
+// onto the purple gradient. Give them a solid light surface and dark text.
+$code-block-bg:          #ffffff;
+$code-block-border-left: #d0d5dd;
+$code-color:             #2b2f36;   // inline code text
+$code-bg:                #eef0f6;   // inline code background
+
+/*-- scss:rules --*/
+
+// ---------------------------------------------------------------- source code
+// Syntax-highlighted blocks and plain file listings: light surface, dark text.
+div.sourceCode,
+pre.text,
+.callout div.sourceCode,
+.callout pre.text {
+  background-color: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.14);
+  border-radius: 0.5rem;
+}
+
+div.sourceCode pre,
+div.sourceCode pre code,
+pre.text,
+pre.text code {
+  background-color: transparent;
+  color: #2b2f36;
+}
+
+// ------------------------------------------------------------ printed output
+// Blocks holding captured stdout are bare <pre><code> with no class. Style them
+// as a terminal so they read as results rather than as more source code.
+pre:not([class]) {
+  background-color: #1b2028;
+  color: #f2f4f7;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 0.5rem;
+  padding: 0.9rem 1rem;
+}
+pre:not([class]) code {
+  background-color: transparent;
+  color: #f2f4f7;
+}
+.callout pre:not([class]) {
+  background-color: #1b2028;
+  color: #f2f4f7;
+}
+
+// inline `code` in body text, headings and callout titles
+code:not(.sourceCode) {
+  background-color: $code-bg;
+  color: $code-color;
+}
+
+// keep the copy button legible against the white surface
+.code-copy-button {
+  color: #6b7280;
+  &:hover { color: #111827; }
+}
+
+// ------------------------------------------------------------------ callouts
+// Quartz sets --bs-body-color to #fff, but callout headers and bodies use very
+// light backgrounds, so titles and text came out white-on-near-white.
+.callout {
+  background-color: #ffffff;
+  color: #23272f;
+
+  .callout-header,
+  .callout-title-container,
+  .callout-header * { color: #1f2430; }
+
+  .callout-body,
+  .callout-body p,
+  .callout-body li,
+  .callout-body td,
+  .callout-body th,
+  .callout-body strong { color: #23272f; }
+
+  a { color: #1b4f9c; text-decoration: underline; }
+
+  // code inside a callout needs to separate from the white callout body
+  div.sourceCode, pre.text { background-color: #f7f8fa; }
+}
+
+// the "Code" fold toggle reads as the lid of the code block below it
+details.code-fold > summary,
+summary.code-fold-summary {
+  color: #2b2f36;
+  background-color: #eef0f6;
+  border: 1px solid rgba(0, 0, 0, 0.14);
+  border-bottom: none;
+  border-radius: 0.5rem 0.5rem 0 0;
+  padding: 0.2rem 0.6rem;
+  font-weight: 500;
+}
+details.code-fold > summary:hover { background-color: #e3e7f0; }
+
+// ------------------------------------------------------------------- overflow
+// nothing may spill out of the body column and over the sidebar / TOC
+img, figure img, .quarto-figure img { max-width: 100%; height: auto; }
+figure, .quarto-figure { max-width: 100%; }
+div.sourceCode, pre { max-width: 100%; overflow-x: auto; }
+.cell-output, .cell-output-display { max-width: 100%; overflow-x: auto; }
+
+// ---------------------------------------------------------------------- links
+// Quartz sets --bs-link-color to #fff, the same as --bs-body-color, so links in
+// the body were indistinguishable from surrounding text (and Quarto removes the
+// underline from citation links, hiding those completely). Give content links a
+// distinct colour that carries on the purple ground. Scoped to the article body
+// so the sidebar, TOC and navigation keep their own styling.
+main.content {
+  a:not(.anchorjs-link):not(.nav-link):not(.quarto-anchor):not([aria-hidden="true"]) {
+    color: #ffdf7e;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+
+    &:hover,
+    &:focus { color: #fff1c2; }
+  }
+
+  // inline citations: Quarto sets text-decoration:none, so mark them with a
+  // dotted rule instead of a solid one to keep them distinct from plain links
+  .citation a {
+    color: #ffdf7e;
+    text-decoration: underline dotted;
+    text-underline-offset: 3px;
+  }
+
+  // links sitting on the white callout surface need a dark colour instead
+  .callout a:not(.anchorjs-link) {
+    color: #1b4f9c;
+    text-decoration: underline;
+
+    &:hover,
+    &:focus { color: #12376e; }
+  }
+}
+
+// Quarto's per-line anchors live inside code blocks, which have a light surface
+div.sourceCode a,
+pre a { color: inherit; text-decoration: none; }

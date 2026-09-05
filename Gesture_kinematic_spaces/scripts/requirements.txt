@@ -1,0 +1,11 @@
+jupyterlab
+numpy
+pandas
+scipy
+matplotlib
+plotly
+statsmodels
+tqdm
+shapedtw
+pillow
+umap-learn
