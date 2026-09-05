@@ -45,10 +45,9 @@ knitr:
 This is a quarto notebook for quick exploration of the work done. But we would recommend work in the jupyter notebook for actual testing.
 
 ### Info documents
+* location Repository: https://github.com/ShoAkamine/envisionboxDTW/
 
-* location Repository: https://github.com/WimPouw/envisionboxDTW/
-
-* location Jupyter notebook: https://github.com/WimPouw/envisionboxDTW/tree/main/Gesture_kinematic_spaces/scripts
+* location Jupyter notebook: https://github.com/ShoAkamine/envisionboxDTW/tree/main/scripts/
 
 ### Citation
 Akamine, S., Samson, K., & Pouw, W. (2026). Gesture validation toolkit for dynamic time warping: Benchmarking DTW variants against human judgements of gesture form similarity (Version 1.0.0) [Computer software]. https://github.com/WimPouw/envisionboxDTW/
