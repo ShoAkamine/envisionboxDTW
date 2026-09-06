@@ -18,7 +18,7 @@ Akamine, S., Samson, K., & Pouw, W. (2026). Gesture validation toolkit for dynam
 ```
 @software{Akaine_Gesture_validation_toolkit_2026,
 author = {Akaine, Sho and Samson, Kyle and Pouw, Wim},
-doi = {https://doi.org/10.5281/zenodo.22553425},
+doi = {10.5281/zenodo.22553425},
 month = sep,
 title = {{Gesture validation toolkit for dynamic time warping}},
 url = {https://github.com/ShoAkamine/envisionboxDTW},
