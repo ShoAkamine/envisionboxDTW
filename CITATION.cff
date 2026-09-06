@@ -1,0 +1,17 @@
+cff-version: 1.0.0
+message: "If you found this module helpful, please cite it as below."
+authors:
+- family-names: "Akaine"
+  given-names: "Sho"
+  orcid: "https://orcid.org/0000-0002-2260-2032"
+- family-names: "Samson"
+  given-names: "Kyle"
+- family-names: "Pouw"
+  given-names: "Wim"
+  orcid: "https://orcid.org/0000-0003-2729-6502"
+title: "Gesture validation toolkit for dynamic time warping"
+version: 1.0.0
+date-released: 2026-09-06
+url: "https://doi.org/10.5281/zenodo.22553425"
+repository-code: "https://github.com/ShoAkamine/envisionboxDTW"
+type: software
