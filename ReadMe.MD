@@ -20,7 +20,7 @@ Akamine, S., Samson, K., & Pouw, W. (2026). Gesture validation toolkit for dynam
 author = {Akamine, Sho; Samson, Kyle; Pouw, Wim},
 month = sep,
 title = {{Gesture validation toolkit for dynamic time warping}},
-url = {},
+url = {https://doi.org/10.5281/zenodo.22553425},
 version = {1.0.0},
 year = {2026}
 }
