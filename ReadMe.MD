@@ -1,7 +1,5 @@
 # Foundations in Kinematic Analysis Lecture Series
 
-
-## Purpose
 There is a rapidly growing interest in quantifying gesture form similarity using Dynamic time warping (DTW) in the field of (psycho)linguistics (example studies: [Pouw & Dixon, 2020](https://doi.org/10.1080/0163853X.2019.1678967); [Akamine, Meyer, & Ozyurek, 2026](https://osf.io/preprints/psyarxiv/kjhd2_v1/); [Pouw, de Wit, et al., 2021](https://doi.org/10.1007/978-3-030-77817-0_20); [Pouw, Dingemanse, Motamedi, & Özyürek, 2021](https://doi.org/10.1111/cogs.13014); [Trujillo, Dideriksen, Tylén, Christiansen, & Fusaroli, 2023](https://doi.org/10.1111/cogs.13298)).
 
 Recently, [Akamine, Dingemanse, & Özyürek (2026)](https://doi.org/10.3758/s13428-026-02975-5) validated DTW against human similarity ratings and found a moderate negative correlation between hand-coded simiarity ratings and DTW distance scores, confirming that DTW offers a continuous, scalable measure of gesture form similarity (see also [Pouw, Dingemanse, et al., 2021](https://doi.org/10.1111/cogs.13014); [Pearson, Nuttall, & Pouw, 2025](https://doi.org/10.1111/cogs.70137) for other validations that were less extensive).
