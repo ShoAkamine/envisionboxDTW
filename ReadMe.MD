@@ -13,12 +13,12 @@ We aim to provide a toolkit for kinematic similarity analyses of communicative a
 
 If you found this module helpful, please cite it as below:
 
-Akamine, S., Samson, K., & Pouw, W. (2026). Gesture validation toolkit for dynamic time warping: Benchmarking DTW variants against human judgements of gesture form similarity (Version 1.0.0) [Computer software]. https://github.com/WimPouw/envisionboxDTW/
+Akamine, S., Samson, K., & Pouw, W. (2026). Gesture validation toolkit for dynamic time warping: Benchmarking DTW variants against human judgements of gesture form similarity (Version 1.0.0) [Computer software]. https://doi.org/10.5281/zenodo.22553425
 
 ```
 @software{Akaine_Gesture_validation_toolkit_2026,
 author = {Akaine, Sho and Samson, Kyle and Pouw, Wim},
-doi = {10.5281/zenodo.22553425},
+doi = {https://doi.org/10.5281/zenodo.22553425},
 month = sep,
 title = {{Gesture validation toolkit for dynamic time warping}},
 url = {https://github.com/ShoAkamine/envisionboxDTW},
