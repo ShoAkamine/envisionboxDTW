@@ -1,4 +1,4 @@
-# Foundations in Kinematic Analysis Lecture Series
+# Gesture Validation Toolkit for Dynamic Time Warping
 
 There is a rapidly growing interest in quantifying gesture form similarity using Dynamic time warping (DTW) in the field of (psycho)linguistics (example studies: [Pouw & Dixon, 2020](https://doi.org/10.1080/0163853X.2019.1678967); [Akamine, Meyer, & Ozyurek, 2026](https://osf.io/preprints/psyarxiv/kjhd2_v1/); [Pouw, de Wit, et al., 2021](https://doi.org/10.1007/978-3-030-77817-0_20); [Pouw, Dingemanse, Motamedi, & Özyürek, 2021](https://doi.org/10.1111/cogs.13014); [Trujillo, Dideriksen, Tylén, Christiansen, & Fusaroli, 2023](https://doi.org/10.1111/cogs.13298)).
 
